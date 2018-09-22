@@ -1,0 +1,186 @@
+// SASS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home
+//   width: $icon-home-width
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites
+$arrow-left-white-name: 'arrow-left-white'
+$arrow-left-white-x: 110px
+$arrow-left-white-y: 50px
+$arrow-left-white-offset-x: -110px
+$arrow-left-white-offset-y: -50px
+$arrow-left-white-width: 14px
+$arrow-left-white-height: 28px
+$arrow-left-white-total-width: 146px
+$arrow-left-white-total-height: 96px
+$arrow-left-white-image: '../../img/sprite.png'
+$arrow-left-white: (110px, 50px, -110px, -50px, 14px, 28px, 146px, 96px, '../../img/sprite.png', 'arrow-left-white', )
+$arrow-right-white-name: 'arrow-right-white'
+$arrow-right-white-x: 124px
+$arrow-right-white-y: 50px
+$arrow-right-white-offset-x: -124px
+$arrow-right-white-offset-y: -50px
+$arrow-right-white-width: 14px
+$arrow-right-white-height: 28px
+$arrow-right-white-total-width: 146px
+$arrow-right-white-total-height: 96px
+$arrow-right-white-image: '../../img/sprite.png'
+$arrow-right-white: (124px, 50px, -124px, -50px, 14px, 28px, 146px, 96px, '../../img/sprite.png', 'arrow-right-white', )
+$eye-name: 'eye'
+$eye-x: 51px
+$eye-y: 49px
+$eye-offset-x: -51px
+$eye-offset-y: -49px
+$eye-width: 46px
+$eye-height: 27px
+$eye-total-width: 146px
+$eye-total-height: 96px
+$eye-image: '../../img/sprite.png'
+$eye: (51px, 49px, -51px, -49px, 46px, 27px, 146px, 96px, '../../img/sprite.png', 'eye', )
+$lies-name: 'lies'
+$lies-x: 0px
+$lies-y: 0px
+$lies-offset-x: 0px
+$lies-offset-y: 0px
+$lies-width: 61px
+$lies-height: 49px
+$lies-total-width: 146px
+$lies-total-height: 96px
+$lies-image: '../../img/sprite.png'
+$lies: (0px, 0px, 0px, 0px, 61px, 49px, 146px, 96px, '../../img/sprite.png', 'lies', )
+$magniffic-glass-name: 'magniffic-glass'
+$magniffic-glass-x: 128px
+$magniffic-glass-y: 78px
+$magniffic-glass-offset-x: -128px
+$magniffic-glass-offset-y: -78px
+$magniffic-glass-width: 15px
+$magniffic-glass-height: 16px
+$magniffic-glass-total-width: 146px
+$magniffic-glass-total-height: 96px
+$magniffic-glass-image: '../../img/sprite.png'
+$magniffic-glass: (128px, 78px, -128px, -78px, 15px, 16px, 146px, 96px, '../../img/sprite.png', 'magniffic-glass', )
+$plus-name: 'plus'
+$plus-x: 61px
+$plus-y: 0px
+$plus-offset-x: -61px
+$plus-offset-y: 0px
+$plus-width: 49px
+$plus-height: 49px
+$plus-total-width: 146px
+$plus-total-height: 96px
+$plus-image: '../../img/sprite.png'
+$plus: (61px, 0px, -61px, 0px, 49px, 49px, 146px, 96px, '../../img/sprite.png', 'plus', )
+$question-name: 'question'
+$question-x: 110px
+$question-y: 0px
+$question-offset-x: -110px
+$question-offset-y: 0px
+$question-width: 36px
+$question-height: 50px
+$question-total-width: 146px
+$question-total-height: 96px
+$question-image: '../../img/sprite.png'
+$question: (110px, 0px, -110px, 0px, 36px, 50px, 146px, 96px, '../../img/sprite.png', 'question', )
+$run-name: 'run'
+$run-x: 0px
+$run-y: 49px
+$run-offset-x: 0px
+$run-offset-y: -49px
+$run-width: 51px
+$run-height: 47px
+$run-total-width: 146px
+$run-total-height: 96px
+$run-image: '../../img/sprite.png'
+$run: (0px, 49px, 0px, -49px, 51px, 47px, 146px, 96px, '../../img/sprite.png', 'run', )
+$x-name: 'x'
+$x-x: 110px
+$x-y: 78px
+$x-offset-x: -110px
+$x-offset-y: -78px
+$x-width: 18px
+$x-height: 18px
+$x-total-width: 146px
+$x-total-height: 96px
+$x-image: '../../img/sprite.png'
+$x: (110px, 78px, -110px, -78px, 18px, 18px, 146px, 96px, '../../img/sprite.png', 'x', )
+$spritesheet-width: 146px
+$spritesheet-height: 96px
+$spritesheet-image: '../../img/sprite.png'
+$spritesheet-sprites: ($arrow-left-white, $arrow-right-white, $eye, $lies, $magniffic-glass, $plus, $question, $run, $x, )
+$spritesheet: (146px, 96px, '../../img/sprite.png', $spritesheet-sprites, )
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home
+//   @include sprite-width($icon-home)
+//
+// .icon-email
+//   @include sprite($icon-email)
+//
+// Example usage in HTML:
+//   `display: block` sprite:
+//   <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//   // CSS
+//   .icon {
+//     display: inline-block;
+//   }
+//
+//   // HTML
+//   <i class="icon icon-home"></i>
+@mixin sprite-width($sprite)
+  width: nth($sprite, 5)
+
+@mixin sprite-height($sprite)
+  height: nth($sprite, 6)
+
+@mixin sprite-position($sprite)
+  $sprite-offset-x: nth($sprite, 3)
+  $sprite-offset-y: nth($sprite, 4)
+  background-position: $sprite-offset-x  $sprite-offset-y
+
+@mixin sprite-image($sprite)
+  $sprite-image: nth($sprite, 9)
+  background-image: url(#{$sprite-image})
+
+@mixin sprite($sprite)
+  @include sprite-image($sprite)
+  @include sprite-position($sprite)
+  @include sprite-width($sprite)
+  @include sprite-height($sprite)
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SASS
+//
+// @include sprites($spritesheet-sprites)
+@mixin sprites($sprites)
+  @each $sprite in $sprites
+    $sprite-name: nth($sprite, 10)
+    .#{$sprite-name}
+      @include sprite($sprite)
+
+
+.icon-
+  &arrow-left-white
+    @include sprite($arrow-left-white)
+  &arrow-right-white
+    @include sprite($arrow-right-white)
+  &eye
+    @include sprite($eye)
+  &lies
+    @include sprite($lies)
+  &magniffic-glass
+    @include sprite($magniffic-glass)
+  &plus
+    @include sprite($plus)
+  &question
+    @include sprite($question)
+  &run
+    @include sprite($run)
+  &x
+    @include sprite($x)

@@ -1,0 +1,53 @@
+.icon-arrow-left-white {
+  background-image: url(../../img/sprite.png);
+  background-position: -110px -50px;
+  width: 14px;
+  height: 28px; }
+
+.icon-arrow-right-white {
+  background-image: url(../../img/sprite.png);
+  background-position: -124px -50px;
+  width: 14px;
+  height: 28px; }
+
+.icon-eye {
+  background-image: url(../../img/sprite.png);
+  background-position: -51px -49px;
+  width: 46px;
+  height: 27px; }
+
+.icon-lies {
+  background-image: url(../../img/sprite.png);
+  background-position: 0px 0px;
+  width: 61px;
+  height: 49px; }
+
+.icon-magniffic-glass {
+  background-image: url(../../img/sprite.png);
+  background-position: -128px -78px;
+  width: 15px;
+  height: 16px; }
+
+.icon-plus {
+  background-image: url(../../img/sprite.png);
+  background-position: -61px 0px;
+  width: 49px;
+  height: 49px; }
+
+.icon-question {
+  background-image: url(../../img/sprite.png);
+  background-position: -110px 0px;
+  width: 36px;
+  height: 50px; }
+
+.icon-run {
+  background-image: url(../../img/sprite.png);
+  background-position: 0px -49px;
+  width: 51px;
+  height: 47px; }
+
+.icon-x {
+  background-image: url(../../img/sprite.png);
+  background-position: -110px -78px;
+  width: 18px;
+  height: 18px; }

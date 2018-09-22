@@ -1,0 +1,42 @@
+/* Including fonts */
+@font-face {
+  font-family: "MPLUSRounded1c";
+  src: url("../../fonts/MPLUSRounded1c/MPLUSRounded1c-Thin.ttf");
+  font-style: normal;
+  font-weight: 100; }
+
+@font-face {
+  font-family: "MPLUSRounded1c";
+  src: url("../../fonts/MPLUSRounded1c/MPLUSRounded1c-Light.ttf");
+  font-style: normal;
+  font-weight: 300; }
+
+@font-face {
+  font-family: "MPLUSRounded1c";
+  src: url("../../fonts/MPLUSRounded1c/MPLUSRounded1c-Regular.ttf");
+  font-style: normal;
+  font-weight: 400; }
+
+@font-face {
+  font-family: "MPLUSRounded1c";
+  src: url("../../fonts/MPLUSRounded1c/MPLUSRounded1c-Medium.ttf");
+  font-style: normal;
+  font-weight: 500; }
+
+@font-face {
+  font-family: "MPLUSRounded1c";
+  src: url("../../fonts/MPLUSRounded1c/MPLUSRounded1c-Bold.ttf");
+  font-style: normal;
+  font-weight: 700; }
+
+@font-face {
+  font-family: "MPLUSRounded1c";
+  src: url("../../fonts/MPLUSRounded1c/MPLUSRounded1c-ExtraBold.ttf");
+  font-style: normal;
+  font-weight: 800; }
+
+@font-face {
+  font-family: "MPLUSRounded1c";
+  src: url("../../fonts/MPLUSRounded1c/MPLUSRounded1c-Black.ttf");
+  font-style: normal;
+  font-weight: 900; }
